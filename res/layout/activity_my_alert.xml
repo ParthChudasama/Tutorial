@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="learn.tutorial.UI.MyAlert"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="One Select Alert "
+        android:layout_marginTop="32dp"
+        android:onClick="Button1"
+        style="@android:style/Widget.Material.Button.Colored"
+        />
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:onClick="Button2"
+        android:elevation="3dp"
+        android:text="Two Select Alert "
+        />
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:onClick="Button3"
+        android:text="Three Select Alert "
+        />
+
+
+</LinearLayout>

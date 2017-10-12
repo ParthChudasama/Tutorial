@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="learn.tutorial">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.Camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.Camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.listactivity" />
+        <activity android:name=".UI.ListNextpgActivity" />
+        <activity android:name=".UI.ExpandListView" />
+        <activity android:name=".UI.expand_list_nxtpg" />
+        <activity android:name=".UI.MyGridView" />
+        <activity android:name=".UI.Gridnxtpage" />
+        <activity android:name=".UI.MyAlert" />
+        <activity android:name=".UI.ProgressDialogActivity" />
+        <activity android:name=".UI.DateAndTime" />
+        <activity android:name=".UI.Animations" />
+        <activity android:name=".UI.sharedprefactivity" />
+        <activity android:name=".UI.internalActivity" />
+        <activity android:name=".UI.externalAcitivity" />
+        <activity android:name=".UI.sql_db" />
+        <activity android:name=".UI.add_country" />
+        <activity android:name=".UI.modify_country" />
+        <activity android:name=".UI.FAB"></activity>
+        <activity android:name=".UI.customActionBar">
+            android:theme="@style/CustomTheme"
+        </activity>
+    </application>
+
+</manifest>

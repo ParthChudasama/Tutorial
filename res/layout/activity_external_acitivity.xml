@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="learn.tutorial.UI.externalAcitivity">
+    <EditText
+        android:id="@+id/edtxternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxternal"
+        android:weightSum="2"
+        android:id="@+id/linear">
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Save"
+            android:onClick="save"/>
+        <Button
+            android:id="@+id/btnget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="read"
+            android:onClick="Read"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="154dp"
+        android:layout_marginTop="24dp"
+        android:text="Delete"
+        android:onClick="delete"
+        android:layout_below="@+id/txtmsg"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

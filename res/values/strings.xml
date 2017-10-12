@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">"Tutorial "</string>
+    <string name="Listview">ListVIew</string>
+    <string name="btn_delete">btn_delete</string>
+    <string name="btn_update">btn_update</string>
+    <string name="enter_title">enter_title</string>
+    <string name="enter_desc">enter_desc</string>
+    <string-array name="teams">
+        <item>India</item>
+        <item>West Indies</item>
+    </string-array>
+    <string-array name="cricket">
+        <item>India won in 2012 worldcup</item>
+        <item> pakistan won 1992 worldcup</item>
+        <item>South africa has never won a world cup</item>
+    </string-array>
+</resources>

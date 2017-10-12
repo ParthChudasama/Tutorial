@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="learn.tutorial.UI.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:weightSum="3">
+
+    <Button
+        android:id="@+id/ListView"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        android:onClick="list"
+        android:text="@string/Listview" />
+
+    <Button
+        android:id="@+id/Expandlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="ExpandListView"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:onClick="Expand" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridView"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:onClick="Grid"/>
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:onClick="Alert"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:text="Alert" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress Dialouge"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:onClick="ProgressDialog"
+                style="@android:style/Widget.Material.Button.Colored"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Date and Time"
+                android:onClick="DateTime"
+                style="@android:style/Widget.Material.Button.Colored"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:onClick="Anim"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:text="Animation" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SharedPref"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:onClick="Sharedpref"
+                style="@android:style/Widget.Material.Button.Colored"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="External"
+                android:onClick="External"
+                style="@android:style/Widget.Material.Button.Colored"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/Internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Internal"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:onClick="Internal" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQLite"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:onClick="SQL"
+            style="@android:style/Widget.Material.Button.Colored" />
+        <Button
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:text="FAB"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:onClick="FAB"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="CstActionBAr"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:onClick="CustomActionBAr" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+
+                style="@android:style/Widget.Material.Button.Colored" />
+            <Button
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
